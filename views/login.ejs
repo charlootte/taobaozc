@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>淘宝网 - 淘！我喜欢</title>
+    <link type="text/css" href="/stylesheets/login.css" rel="stylesheet">
+    <script type="text/javascript" src="/javascripts/login.js"></script>
+</head>
+<body class="chl-reg" onload="autoStart()">
+<div id="page">
+    <div id="header" class="clearfix" >
+        <h1 id="logo">
+            <a href="http://www.taobao.com/" target="_top">
+                <img id="J_TBLogo" src="/images/loglo.png" alt="淘宝网 Taobao.com - 阿里巴巴旗下网站"/>
+            </a>
+        </h1>
+    </div>
+    <div class="body clearfix">
+        <div class="login-box-warp">
+            <div class="login-box"id="J_LoginBox">
+                <!--登录开始-->
+                <div class="hd clearfix">
+                    <h2 id="J_Static2Quick" class="quick" >快速登录</h2>
+                    <h2 id="J_Quick2Static" class="static">帐户密码登录</h2>
+                </div>
+                <div class="bd">
+                    <div id="pwdLogin">
+                        <div id="J_Message" class="login-msg error">
+                            <i class="iconfont"> </i>
+                            <p class="error">您输入的密码和账户名不匹配，请重新输入。</p>
+                        </div>
+                        <form>
+                            <div class="field username-field">
+                                <label > <i class="iconfont" title="会员名"></i></label>
+                                <input type="text" name="TPL_username" id="TPL_username_1" class="login-text" placeholder="手机号/会员名/邮箱" maxlength="32" tabindex="1">
+	    							<span id="J_NickX1433840767962" class="nickx" style="display:none;">
+	    								<i class="iconfont"></i>
+	    							</span>
+                            </div>
+                            <div class="field pwd-field">
+                                <label id="password-label" ><i class="icon iconfont" title="登录密码"></i></label>
+	    							<span id="J_StandardPwd">
+					                    <input type="password" aria-labelledby="password-label" name="TPL_password" id="TPL_password_1" class="login-text" tabindex="2">
+				                    </span>
+                            </div >
+                            <div class="login-links">
+                                <a href="https://passport.taobao.com/ac/password_find.htm?from_site=0" target="_blank">忘记登录密码？</a>
+                                <a href="http://reg.taobao.com/member/newbie.htm?from=login" class="register" target="_blank">免费注册</a>
+                            </div>
+                            <div class="submit">
+                                <button type="button" tabindex="3" id="J_SubmitStatic">登　录</button>
+                            </div>
+                            <ul>
+                                <li class="other-login">
+                                    <a href="http://weibo.com/login.php?entry=taobao&amp;goto=https%3A%2F%2Flogin.taobao.com%2Faso%2Ftvs%3Fdomain%3Dweibo%26sid%3Dd23eff4ca2b76e466902df446a55ce17%26target%3D687474703A2F2F6D656D626572312E74616F62616F2E636F6D2F6D656D6265722F66726573682F6163636F756E745F73656375726974792E68746D3F73706D3D61317A30392E322E3735343839343433372E342E71674E68464E&amp;goto2=http%3A%2F%2Fmember1.taobao.com%2Fmember%2Ffresh%2Faccount_security.htm%3Fspm%3Da1z09.2.754894437.4.qgNhFN" class="weibo-login" title="微博帐号登录">微博登录</a>
+                                    <a href="https://auth.alipay.com/login/index.htm?loginScene=7&amp;goto=https%3A%2F%2Fauth.alipay.com%2Flogin%2Ftaobao_trust_login.htm%3Ftarget%3Dhttps%253A%252F%252Flogin.taobao.com%252Fmember%252Falipay_sign_dispatcher.jhtml%253Ftg%253Dhttp%25253A%25252F%25252Fmember1.taobao.com%25252Fmember%25252Ffresh%25252Faccount_security.htm%25253Fspm%25253Da1z09.2.754894437.4.qgNhFN&amp;params=VFBMX3JlZGlyZWN0X3VybD1odHRwJTNBJTJGJTJGbWVtYmVyMS50YW9iYW8uY29tJTJGbWVtYmVyJTJGZnJlc2glMkZhY2NvdW50X3NlY3VyaXR5Lmh0bSUzRnNwbSUzRGExejA5LjIuNzU0ODk0NDM3LjQucWdOaEZO" class="alipay-login" title="支付宝账户登录">支付宝登录</a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+
+                    <!--快速登录开始-->
+                    <div class="quick-form" id="quick-login" style="display:none;">
+                        <div id="J_QRCodeLogin">
+                            <div class="qrcode-mod">
+                                <p class="qrcode-desc">手机扫码 安全登录</p>
+                                <div class="qrcode-main">
+                                    <div class="qrcode-img" id="J_QRCodeImg">
+                                        <img src="/images/download.png"/>
+                                    </div>
+                                </div>
+                                <p class="qrcode-desc">使用手机淘宝扫描二维码</p>
+                                <div class="qrcode-msg" style="display:none;">
+                                    <div class="msg-err">
+                                        <p>
+                                            <i class="iconfont"></i>
+                                        </p>
+                                        <h6>登录失败</h6>
+                                        <p>请刷新二维码后重新扫描</p>
+                                        <a href="javascript:;" class="refresh J_QRCodeRefresh">刷新二维码</a>
+                                    </div>
+                                    <div class="msg-ok" style="display:none;">
+                                        <p>
+                                            <i class="iconfont"></i>
+                                        </p>
+                                        <h6>扫描成功！</h6>
+                                        <p>请按手机的提示操作，请勿刷新本页面</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="login-bg" id="J_Login">
+                <img src="/images/oooo.png" />
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="login-extra">
+        <div style=" margin-bottom: 10px;">手机登录<a id="J_MTaobao" href="http://www.taobao.com/wap/mobile/">m.taobao.com</a>，随时随地购物
+        </div>
+        <div>
+            <p style="float:right"><img height="18" width="18" style="vertical-align: middle;" alt="反馈" src="/images/T1TPhsXoRlXXXXXXXX-18-18.png"/><a target="_blank" href="http://ur.taobao.com/survey/view.htm?id=296">"登录页面"改进建议</a></p>
+            <p>高速安全、一键免登，推荐UC浏览器.<a href="http://down2.uc.cn/pcbrowser/index.php?id=101&amp;pid=4449">点此下载&gt;&gt;</a></p>
+        </div>
+
+    </div>
+    <div  class="footer">
+        <div class="footer-hd">
+            <p>
+                <a href="http://page.1688.com/shtml/about/ali_group1.shtml">阿里巴巴集团</a>
+                <b>|</b>
+                <a href="http://www.alibaba.com">阿里巴巴国际站</a>
+                <b>|</b>
+                <a href="http://www.1688.com">阿里巴巴中国站</a>
+                <b>|</b>
+                <a href="http://www.aliexpress.com">全球速卖通</a>
+                <b>|</b>
+                <a href="http://www.taobao.com">淘宝网</a>
+                <b>|</b>
+                <a href="http://www.tmall.com">天猫</a>
+                <b>|</b>
+                <a href="http://ju.taobao.com">聚划算</a>
+                <b>|</b>
+                <a href="http://www.etao.com">一淘</a>
+                <b>|</b>
+                <a href="http://www.alimama.com">阿里妈妈</a>
+                <b>|</b>
+                <a href="http://trip.taobao.com">淘宝旅行</a>
+                <b>|</b>
+                <a href="http://www.xiami.com">虾米</a>
+                <b>|</b>
+                <a href="http://www.aliyun.com">阿里云计算</a>
+                <b>|</b>
+                <a href="http://www.yunos.com">云OS</a>
+                <b>|</b>
+                <a href="http://www.net.cn">万网</a>
+                <b>|</b>
+                <a href="http://www.alipay.com">支付宝</a>
+                <b>|</b>
+                <a href="http://www.laiwang.com/">来往</a>
+            </p>
+        </div>
+        <div class="footer-bd">
+            <p>
+                <a href="http://www.taobao.com/about">关于淘宝</a>
+                <a href="http://www.taobao.com/about/partners.php">合作伙伴</a>
+                <a href="http://pro.taobao.com">营销中心</a>
+                <a href="mailto:lianzheng@taobao.com" title="lianzheng@taobao.com" target="_self">廉正举报</a>
+                <a href="http://service.taobao.com/support/main/service_route.htm">联系客服</a>
+                <a href="http://open.taobao.com">开放平台</a>
+                <a href="http://www.taobao.com/about/join.php">诚征英才</a>
+                <a href="http://www.taobao.com/about/contact.php">联系我们</a>
+                <a href="http://www.taobao.com/sitemap.php">网站地图</a>
+                <a href="http://www.taobao.com/about/copyright.php">法律声明</a>
+                <em>© 2015 Taobao.com 版权所有</em>
+            </p>
+            <p>
+                <span>网络文化经营许可证：<a href="/images/T1ysdvXtNeXXcPpEkQ-972-636.jpg">文网文[2010]040号</a></span>
+                <b>|</b>
+                <span>增值电信业务经营许可证：浙B2-20080224-1</span>
+                <b>|</b>
+                <span>信息网络传播视听节目许可证：1109364号</span>
+            </p>
+        </div>
+        <div class="footer-ft">
+            <a href="http://www.pingpinganan.gov.cn/web/index.aspx?file=index.aspx"><img src="/images/wj.gif"/></a>
+            <a href="http://idinfo.zjaic.gov.cn/bscx.do?method=hddoc&amp;id=33018400000067" class="mod mod-a"></a>
+            <a href="http://idinfo.zjaic.gov.cn/bscx.do?&amp;method=hddoc&amp;id=33018400000067" class="mod mod-b"></a>
+            <a href="http://www.theclimategroup.org.cn/about/friend" class="mod mod-c"></a>
+            <a href="https://ss.cnnic.cn/verifyseal.dll?&amp;sn=2010062300100001357&amp;pa=20100701" class="mod mod-d"></a>
+            <a href="http://www.ppaaol.com/verifySite.do?id=1051" class="mod mod-e"></a>
+        </div>
+
+    </div><!-- #footer END -->
+
+</div>
+<script type="text/javascript" src="javascripts\jquery-2.1.3.js"></script>
+<script type="text/javascript">
+    $("#J_SubmitStatic").click(function(){
+        var username = $("#TPL_username_1").val();
+        var password = $("#TPL_password_1").val();
+        $.ajax({
+            type: "post",
+            url: "/mylogin",
+            data:{username: username, password: password},
+            success: function(data) {
+                if(!data.isChecked){
+                    alert("请重新输入");
+                };
+                location.href = 'so';
+            },
+            error: function(data) {
+                alert("失败");
+            }
+        })
+    })
+</script>
+
+
+
+
+</body>
+</html>

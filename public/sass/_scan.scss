@@ -1,0 +1,343 @@
+@import "compass/css3";
+@import "compass/reset";
+
+.scan{
+  width:100%;
+  header{
+    width:100%;
+    .rgsAndLgi{
+      width:100%;
+      background-color:#F5F5F5;
+      a{
+        display: inline-block;
+        width:3%;
+        padding:5px 0;
+        float:right;
+        font-size: 0.7em;
+        color:#111;
+        text-align: center;
+        line-height: 2em;
+      }
+    }
+    nav{
+      width:80%;
+      margin:10px auto;
+      .yzy-logo{
+        float:left;
+        display: inline-block;
+        width:13%;
+        height:40px;
+        background:url(../images/logo.png) no-repeat left;
+      }
+      >ul{
+        width:66%;
+        float:left;
+        font-size: 1em;
+        margin-left: 2%;
+        li{
+          display: inline-block;
+          width:14%;
+          position:relative;
+          .link{
+            display: inline-block;
+            width:100%;
+            text-align: center;
+            padding:10px 0;
+            color:#000;
+            position:relative;
+            b{
+              display: block;
+              position: absolute;
+              top:15px;
+              left:90px;
+              width:12px;
+              height:6px;
+              background:url(../images/arrow.png) no-repeat 0 0;
+            }
+          }
+          &:hover,&:focus{
+            .link{
+              color:#00ccce;
+              b{
+                background:url(../images/arrow.png) no-repeat -12px -27px;
+              }
+            }
+          }
+          .nav-son{
+            position:absolute;
+            width:102px;
+            border:1px solid #00cecc;
+            background:#fff;
+            z-index:999;
+            .triangle{
+              display:inline-block;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 0 6px 10px 6px;
+              border-color: transparent transparent #00cecc transparent;
+              position:absolute;
+              top:-10px;
+              left:40px;
+            }
+            .category-drop-down{
+              width:100%;
+              li{
+                position:relative;
+                left:20%;
+                width:70%;
+                background:url("../images/icons.png") no-repeat;
+                z-index: 100;
+                &:first-child{
+                  background-position:0 5px;
+                }
+                &:nth-child(2){
+                  background-position:0 -25px;
+                }
+                &:nth-child(3){
+                  background-position:0 -55px;
+                }
+                &:nth-child(4){
+                  background-position:0 -85px;
+                }
+                &:nth-child(5){
+                  background-position:0 -115px;
+                }
+                &:nth-child(6){
+                  background-position:0 -145px;
+                }
+                &:nth-child(7){
+                  background-position:0 -175px;
+                }
+                &:nth-child(8){
+                  background-position:0 -205px;
+                }
+                &:nth-child(9){
+                  background-position:0 -235px;
+                }
+                &:nth-child(10){
+                  background-position:0 -269px;
+                }
+
+                a{
+                  position:relative;
+                  left:-21px;
+                  width:93px;
+                  font-size: 0.85em;
+                  display: block;
+                  text-align: center;
+                  padding:5px;
+                  &:hover,&:focus{
+                    color:#000;
+                    background:#00ccce;
+                    @include opacity(0.5);
+                  }
+                }
+
+              }
+            }
+            .person-drop-down{
+              li{
+                background: #fff;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .content{
+    width:80%;
+    margin:0 auto;
+
+    .categoryTypes{
+      width:100%;
+      .categoryList{
+        position:relative;
+        .category{
+          float:left;
+          margin:2px;
+          a{
+            display:inline-block;
+            font-size: 13px;
+            font-family: "Microsoft Yahei";
+            width:41px;
+            height:38px;
+            line-height: 38px;
+            padding-left:37px;
+            border:1px solid #eee;
+            @include border-radius(19px);
+          }
+          &:first-child{
+            a{
+              color:#fff;
+              background:url("../images/categorylist.png") rgba(255,0,0,0.5) no-repeat 10px -37px;
+            }
+          }
+          &:nth-child(2){
+            a{
+              background:url("../images/categorylist.png") no-repeat -455px 5px;
+              &:hover{
+                color:#fff;
+                background:url("../images/categorylist.png")  rgba(255,0,0,0.5) no-repeat -455px -42px;
+              }
+            }
+          }
+          &:nth-child(3){
+            a{
+              background:url("../images/ctgrylst.png") no-repeat -733px 7px;
+              &:hover{
+                color:#fff;
+                background:url("../images/categorylist2.png")  rgba(255,0,0,0.5) no-repeat -735px -40px;
+              }
+            }
+          }
+          &:nth-child(4){
+            a{
+              background:url("../images/categorylist.png") no-repeat -645px 9px;
+              &:hover{
+                color:#fff;
+                background:url("../images/categorylist.png")  rgba(255,0,0,0.5) no-repeat -645px -42px;
+              }
+            }
+          }
+          &:nth-child(5){
+            a{
+              background:url("../images/categorylist.png") no-repeat -555px 8px;
+              &:hover{
+                color:#fff;
+                background:url("../images/categorylist.png")  rgba(255,0,0,0.5) no-repeat -555px -42px;
+              }
+            }
+          }
+          &:nth-child(6){
+            a{
+              background:url("../images/categorylist.png") no-repeat -170px 9px;
+              &:hover{
+                color:#fff;
+                background:url("../images/categorylist.png")  rgba(255,0,0,0.5) no-repeat -170px -42px;
+              }
+            }
+          }
+          &:nth-child(7){
+            a{
+              background:url("../images/categorylist.png") no-repeat -365px 5px;
+              &:hover{
+                color:#fff;
+                background:url("../images/categorylist.png")  rgba(255,0,0,0.5) no-repeat -365px -42px;
+              }
+            }
+          }
+          &:nth-child(8){
+            a{
+              background:url("../images/categorylist.png") no-repeat -85px 9px;
+              &:hover{
+                color:#fff;
+                background:url("../images/categorylist.png")  rgba(255,0,0,0.5) no-repeat -85px -38px;
+              }
+            }
+          }
+          &:nth-child(9){
+            a{
+              background:url("../images/categorylist.png") no-repeat -275px 6px;
+              &:hover{
+                color:#fff;
+                background:url("../images/categorylist.png")  rgba(255,0,0,0.5) no-repeat -275px -42px;
+              }
+            }
+            b{
+              display: inline-block;
+              border-left:1px solid #eee;
+              background:url("../images/categorylist.png") no-repeat -805px 6px;
+
+            }
+          }
+        }
+      }
+
+    }
+
+    .layout{
+      width:100%;
+      .projects{
+        font:14px "Microsoft Yahei";
+        width:100%;
+        padding-top:10px;
+        .projectItem{
+          display:inline-block;
+          width:237.4px;
+          padding:7px;
+          margin:5px;
+          border:1px solid #eee;
+          a{
+            display: block;
+            .project-area{
+              display: block;
+              position:relative;
+              .project-pic{
+                width:100%;
+                height:166px;
+              }
+              .shadow{
+                position:absolute;
+                top:0;
+                display:block;
+                width:100%;
+                height:166px;
+              }
+              &:hover{
+                .shadow{
+                  background:rgba(99,99,99,0.3);
+                }
+               }
+              .project-step{
+                position:absolute;
+                top:150px;
+                display: inline-block;
+                width:50px;
+                color:#fff;
+                background-color:#00cecc;
+                font:0.8em "Microsoft Yahei";
+                text-align: center;
+              }
+            }
+            .project-intro{
+              display: block;
+              width:100%;
+              height:40px;
+              line-height: 20px;
+              padding:5px;
+              text-align:center;
+              border-bottom:2px solid #eee;
+
+            }
+            .project-schedule{
+              display: block;
+              padding:5px 20px 6px;
+              .every-info{
+                display: inline-block;
+                width:50px;
+                text-align:center;
+                font-size: 0.7em;
+                .info-name{
+                  color:#999;
+                }
+                em{
+                  display: block;
+                }
+                >em{
+                  color:#00bfff;
+                }
+              }
+              .info-dollar{
+                width:70px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,445 @@
+/* line 5, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/index.scss */
+.fl {
+  float: left;
+}
+
+/* line 7, ../sass/index.scss */
+.fr {
+  float: right;
+}
+
+/* line 10, ../sass/index.scss */
+.clearfix:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 17, ../sass/index.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 20, ../sass/index.scss */
+.none {
+  display: none;
+}
+
+/* line 23, ../sass/index.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 27, ../sass/index.scss */
+.wrap {
+  width: 100%;
+}
+/* line 29, ../sass/index.scss */
+.wrap header {
+  width: 100%;
+}
+/* line 31, ../sass/index.scss */
+.wrap header .rgsAndLgi {
+  width: 100%;
+  background-color: #F5F5F5;
+}
+/* line 34, ../sass/index.scss */
+.wrap header .rgsAndLgi a {
+  display: inline-block;
+  width: 3%;
+  padding: 5px 0;
+  float: right;
+  font-size: 0.7em;
+  color: #111;
+  text-align: center;
+  line-height: 2em;
+}
+/* line 45, ../sass/index.scss */
+.wrap header nav {
+  width: 80%;
+  margin: 10px auto;
+}
+/* line 48, ../sass/index.scss */
+.wrap header nav .yzy-logo {
+  float: left;
+  display: inline-block;
+  width: 13%;
+  height: 40px;
+  background: url(../images/logo.png) no-repeat left;
+}
+/* line 55, ../sass/index.scss */
+.wrap header nav > ul {
+  width: 66%;
+  float: left;
+  font-size: 1em;
+  margin-left: 2%;
+}
+/* line 60, ../sass/index.scss */
+.wrap header nav > ul li {
+  display: inline-block;
+  width: 14%;
+  position: relative;
+}
+/* line 64, ../sass/index.scss */
+.wrap header nav > ul li .link {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: #000;
+  position: relative;
+}
+/* line 71, ../sass/index.scss */
+.wrap header nav > ul li .link b {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 90px;
+  width: 12px;
+  height: 6px;
+  background: url(../images/arrow.png) no-repeat 0 0;
+}
+/* line 82, ../sass/index.scss */
+.wrap header nav > ul li:hover .link, .wrap header nav > ul li:focus .link {
+  color: #00ccce;
+}
+/* line 84, ../sass/index.scss */
+.wrap header nav > ul li:hover .link b, .wrap header nav > ul li:focus .link b {
+  background: url(../images/arrow.png) no-repeat -12px -27px;
+}
+/* line 89, ../sass/index.scss */
+.wrap header nav > ul li .nav-son {
+  position: absolute;
+  width: 102px;
+  border: 1px solid #00cecc;
+  background: #fff;
+  z-index: 999;
+}
+/* line 95, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 10px 6px;
+  border-color: transparent transparent #00cecc transparent;
+  position: absolute;
+  top: -10px;
+  left: 40px;
+}
+/* line 106, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down {
+  width: 100%;
+}
+/* line 108, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li {
+  position: relative;
+  left: 20%;
+  width: 70%;
+  background: url("../images/icons.png") no-repeat;
+  z-index: 100;
+}
+/* line 114, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li:first-child {
+  background-position: 0 5px;
+}
+/* line 117, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li:nth-child(2) {
+  background-position: 0 -25px;
+}
+/* line 120, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li:nth-child(3) {
+  background-position: 0 -55px;
+}
+/* line 123, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li:nth-child(4) {
+  background-position: 0 -85px;
+}
+/* line 126, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li:nth-child(5) {
+  background-position: 0 -115px;
+}
+/* line 129, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li:nth-child(6) {
+  background-position: 0 -145px;
+}
+/* line 132, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li:nth-child(7) {
+  background-position: 0 -175px;
+}
+/* line 135, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li:nth-child(8) {
+  background-position: 0 -205px;
+}
+/* line 138, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li:nth-child(9) {
+  background-position: 0 -235px;
+}
+/* line 141, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li:nth-child(10) {
+  background-position: 0 -269px;
+}
+/* line 145, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li a {
+  position: relative;
+  left: -21px;
+  width: 93px;
+  font-size: 0.85em;
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+/* line 153, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .category-drop-down li a:hover, .wrap header nav > ul li .nav-son .category-drop-down li a:focus {
+  color: #000;
+  background: #00ccce;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 163, ../sass/index.scss */
+.wrap header nav > ul li .nav-son .person-drop-down li {
+  background: #fff;
+}
+/* line 173, ../sass/index.scss */
+.wrap .container {
+  position: relative;
+}
+/* line 175, ../sass/index.scss */
+.wrap .container #demo1 {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  padding: 0 100px;
+}
+/* line 182, ../sass/index.scss */
+.wrap .container #demo1:hover .new_arr {
+  display: block;
+}
+/* line 184, ../sass/index.scss */
+.wrap .container #demo1 .new_arr {
+  display: none;
+  width: 70%;
+}
+/* line 187, ../sass/index.scss */
+.wrap .container #demo1 .new_arr a {
+  z-index: 100;
+  position: relative;
+  top: -250px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 80px;
+  height: 80px;
+  margin: 0 20px;
+  background: url(../images/arr.png);
+  background-size: 80px 80px;
+}
+/* line 203, ../sass/index.scss */
+.wrap .container #demo1 .new_arr .arr_right {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  float: right;
+}
+/* line 208, ../sass/index.scss */
+.wrap .container #demo1 .img_list {
+  width: 800px;
+  position: relative;
+  height: 384px;
+  z-index: 100;
+}
+/* line 213, ../sass/index.scss */
+.wrap .container #demo1 .img_list ul {
+  position: absolute;
+  left: 0px;
+}
+/* line 217, ../sass/index.scss */
+.wrap .container #demo1 .img_list li {
+  float: left;
+  width: 700px;
+}
+/* line 221, ../sass/index.scss */
+.wrap .container #demo1 .img_list img {
+  width: 800px;
+  height: 384px;
+}
+/* line 229, ../sass/index.scss */
+.wrap .container .comming-soon {
+  width: 280px;
+  position: absolute;
+  right: 100px;
+  top: 0;
+}
+/* line 230, ../sass/index.scss */
+.wrap .container .comming-soon h2 {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10 20px;
+}
+/* line 241, ../sass/index.scss */
+.wrap .container .cate-con {
+  width: 85%;
+  margin: 50px auto;
+}
+/* line 244, ../sass/index.scss */
+.wrap .container .cate-con .cate-title {
+  font-size: 28px;
+  line-height: 28px;
+  color: #333;
+  font-family: STXihei;
+  margin: 0 0 20px 10px;
+}
+/* line 250, ../sass/index.scss */
+.wrap .container .cate-con .cate-title .hot {
+  display: inline-block;
+  margin: 0 0 0 15px;
+  width: 40px;
+  line-height: 20px;
+  background: #ff645a;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: "Helvetica Neue";
+  color: #fff;
+  text-align: center;
+}
+/* line 263, ../sass/index.scss */
+.wrap .container .cate-con .item {
+  float: left;
+  width: 23%;
+  height: 182px;
+  border: 1px solid #e6e6e6;
+  margin: 0 0 20px 15px;
+  background-color: #fff;
+  overflow: hidden;
+}
+/* line 271, ../sass/index.scss */
+.wrap .container .cate-con .item img {
+  width: 100%;
+  height: 182px;
+}
+/* line 276, ../sass/index.scss */
+.wrap .container .cate-con .item:hover .item-info {
+  top: -100px;
+}
+/* line 281, ../sass/index.scss */
+.wrap .container .cate-con .item-info {
+  position: relative;
+  top: -50px;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transtion: all .5s;
+}
+/* line 292, ../sass/index.scss */
+.wrap .container .cate-con .item-info .title {
+  height: 30px;
+  font-size: 14px;
+  font-family: "microsoft yahei";
+  line-height: 15px;
+  padding: 10px 0;
+  overflow: hidden;
+}
+/* line 301, ../sass/index.scss */
+.wrap .container .cate-con .item-info .other-info {
+  font-size: 0;
+  width: 100%;
+  height: 46px;
+  padding-top: 9px;
+}
+/* line 306, ../sass/index.scss */
+.wrap .container .cate-con .item-info .other-info .every-info {
+  float: left;
+  width: 25%;
+  margin: 0 10px;
+}
+/* line 310, ../sass/index.scss */
+.wrap .container .cate-con .item-info .other-info .every-info p {
+  text-align: center;
+}
+/* line 314, ../sass/index.scss */
+.wrap .container .cate-con .item-info .other-info .every-info p.info-num {
+  font-size: 14px;
+  font-family: Verdana;
+  line-height: 14px;
+}
+/* line 319, ../sass/index.scss */
+.wrap .container .cate-con .item-info .other-info .every-info p.info-name {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "SimSun";
+  margin-top: 7px;
+}

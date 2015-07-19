@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scaleble=no">
+	<title>首页</title>
+	<link rel="stylesheet" href="stylesheets/index.css">
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<!--头部登录注册-->
+		<div class="rgsAndLgi clearfix">
+			<a href="login">登录</a>
+			<a href="register">注册</a>
+		</div>
+
+		<!--头部logo及导航-->
+		<nav class="layout clearfix">
+			<a class="yzy-logo" alt="淘宝众筹"></a>
+			<ul id="J_hi_nav" class="nav-all clearfix" >
+				<li class="home">
+					<a class="link" href="so" target="_blank">首页</a>
+				</li>
+				<li class="list">
+					<a class="link J_list" href="javascript:;" target="_blank">浏览项目<b class="c-icon"></b></a>
+					<div class="nav-son" id="J_navSon" style="display: none;">
+						<span class="triangle"></span>
+						<ul class="J_navallType category-drop-down">
+							<li class="first">
+								<a class="category-121278001" href="scan" target="_blank">影音</a>
+							</li>
+							<li>
+								<a class="category-121280001" href="scan" target="_blank">公益</a>
+							</li>
+							<li>
+								<a class="category-121274002" href="scan" target="_blank">书籍</a>
+							</li>
+							<li>
+								<a class="category-121284001" href="scan" target="_blank">娱乐</a>
+							</li>
+							<li>
+								<a class="category-121288001" href="scan" target="_blank">科技</a>
+							</li>
+							<li>
+								<a class="category-121292001" href="scan" target="_blank">设计</a>
+							</li>
+							<li>
+								<a class="category-122018001" href="scan" target="_blank">动漫</a>
+							</li>
+							<li>
+								<a class="category-122020001" href="scan" target="_blank">游戏</a>
+							</li>
+							<li>
+								<a class="category-123330001" href="scan" target="_blank">农业</a>
+							</li>
+							<li class="last"><a class="category-123332001" href="scan" target="_blank">其他</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="myPro">
+					<a class="link" href="javascript:;" target="_blank">我的众筹<b class="c-icon"></b></a>
+					<div class="nav-son" id="pro-nav-son" style="display:none;">
+						<span class="triangle"></span>
+						<ul class="category-drop-down person-drop-down">
+							<li class="first last">
+								<a href="preScan">我的项目<b class="a-icon"></b></a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="publish">
+					<a class="link" href="startPro" target="_blank">发起项目</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+
+		<!--图片轮播效果-->
+		<div id="demo1">
+			<div class="img_list">
+				<ul>
+					<li>
+						<a href="javascript:;" target="_blank"><img src="images/ad1.jpg" alt=""></a>
+					</li >
+					<li style="display:none">
+						<a href="" target="_blank"><img src="images/ad2.jpg" alt=""></a>
+					</li>
+					<li style="display:none">
+						<a href="" target="_blank"><img src="images/ad3.jpg" alt=""></a>
+					</li>
+				</ul>
+			</div>
+			<div class="new_arr">
+				<a  class="arr_left" id="al" onclick="switchPhoto(true)"></a>
+				<a  class="arr_right" id="ar" onclick="switchPhoto(false)"></a>
+			</div>
+
+		</div>
+		<!--即将开始的项目-->
+		<div class="comming-soon ">
+			<h2>即将开始</h2>
+			<ul class="J_CommingSoon">
+				<li class="item-comming">
+					<a href="" target="_blank">
+						<img src="images/ad5.jpg" alt="">
+						<p>菲星智能多功能行车记录导航仪终端HD-D08</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--类目精选-->
+		<div class="cate-con">
+			<p class="cate-title">热门推荐<span class="hot"><span class="text">HOT</span></span></p>
+			<ul class="hot_list" id="hot_list">
+
+				<li class="item " ProName="watch">
+					<a class="item-link" href="javascript:void(0)" target="_blank">
+						<img src="images/prodect1.jpg">
+						<div class="item-info">
+							<p class="title">令人惊奇的背包背包
+							</p>
+							<div class="other-info">
+								<div class="every-info info-deal">
+									<p class="info-name">达成率</p>
+									<p class="info-num">234%</p>
+								</div>
+								<div class="every-info info-dollar">
+									<p class="info-name">已筹金额</p>
+									<p class="info-num">9999</p>
+								</div>
+								<div class="every-info info-support">
+									<p class="info-name">支持人数</p>
+									<p class="info-num">888</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+	</div>
+</div>
+<script type="text/javascript" src="javascripts\jquery-2.1.3.js"></script>
+<script type="text/javascript">
+
+	var scan = $(".J_list");
+	var scanNavSon = $("#J_navSon");
+	var myPro = $(".myPro");
+	var proNavSon = $("#pro-nav-son");
+	scan.click(function(){
+		scanNavSon.slideToggle();
+	});
+	myPro.click(function(){
+		proNavSon.slideToggle();
+	});
+
+	//图片幻灯播放
+	var index = $(".img_list li").children($(this)).index();
+	var index = $(".img_list li").children($(this)).index();
+	function switchPhoto(flag){
+		$(".img_list li").css("display","none");
+		if (!flag) {
+			index++;
+			if (index > 2) {index = 0}
+		}else {
+			index--;
+			if (index < 0) {index = 2}
+		}
+		$(".img_list li").eq(index).css("display","block");
+	}
+
+	function autoPlay(){
+		focus=setInterval(function(){
+			switchPhoto(false);},2000);
+	}
+	autoPlay();
+	//新建项目
+
+	function createPro(npro){
+		var progress = Math.round(npro.currentMoney/npro.goalMoney*100)+ "%";
+		var pnode = document.querySelectorAll('.item')[0].cloneNode(true);
+		var imgsrc ="images\/" + npro.img[0];
+		pnode.querySelectorAll("img")[0].src = imgsrc;
+		pnode.querySelectorAll(".title")[0].innerHTML = npro.proName;
+		pnode.querySelectorAll(".info-deal .info-num")[0].innerHTML = progress;
+		pnode.querySelectorAll(".info-dollar .info-num")[0].innerHTML = npro.currentMoney;
+		pnode.querySelectorAll(".info-support .info-num")[0].innerHTML = npro.supportNum;
+
+		var returnNode = document.getElementById('hot_list').appendChild(pnode);
+
+	}
+
+	initPage();
+	function initPage(){
+		$.ajax({
+			type: "get",
+			url: "/getprolist",
+			success: function(data) {
+				projects = data;
+				var proNum = data.length;
+				console.log("hello");
+				for(var i = 0;i<proNum;i++){
+					createPro(data[i]);
+				}
+				goDetail(data);
+
+			},
+			error: function(data) {
+				alert("失败");
+			}
+		})
+
+
+	}
+function goDetail(data){
+	$("#hot_list li").click(function(){
+		 index = $(this).index();
+		 project =data[index-1];
+		window.open("detail").focus();
+	})
+}
+
+
+</script>
+
+</body>
+</html>

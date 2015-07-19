@@ -1,0 +1,214 @@
+body {
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'\5B8B\4F53',sans-serif;
+}
+body, button,div, dl, dt,form, h1, h2, h6, input,li, ol, p,ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+#page{
+    width: 1190px;
+    margin: 0 auto;
+}
+#logo {
+    padding: 30px 0 0;
+}
+h1 {
+    font-size: 18px;
+}
+#page .body {
+    min-height: 490px;
+    margin-top: 60px;
+    position: relative;
+}
+.clearfix:before,.clearfix:after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.login-box-warp {
+    border: 2px solid #dedede;
+    border-top: 2px solid #f40;
+    padding: 20px 30px 30px;
+    width: 250px;
+    float: right;
+    margin-right: 150px;
+}
+.login-box {
+    color: #666;
+}
+.login-box .hd {
+    overflow: hidden;
+}
+.quick,.static{
+    text-align: center;
+    float: left;
+    font-size: 14px;
+    border-bottom: 1px solid #dedede;
+    width: 50%;
+    padding-bottom: 12px;
+    cursor:pointer;
+}
+.hd .static {
+    border-bottom: 1px solid;
+    color: #333;
+    border-bottom: 1px solid #f40;
+}
+
+.login-box .login-msg.error {
+    background: #FFF2F2;
+    border-color: #ff8e8e;
+    line-height: 18px;
+    padding: 3px;
+    margin-top: 10px;
+    display: none;
+}
+.login-box .login-msg {
+    border: 1px solid #ccc;
+}
+.login-box .login-msg.error .iconfont {
+    color: #f40;
+    padding-right: 5px;
+    float: left;
+}
+.login-box .field {
+    margin-top: 20px;
+    position: relative;
+}
+.login-box .field label {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #FFF;
+    background: #ccc;
+    text-align: center;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    outline: 0;
+}
+.username-field label i{
+    background: url(/images/username.png) no-repeat ;
+}
+.pwd-field i{
+    background: url(/images/pwd.png) no-repeat ;
+}
+.iconfont {
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+}
+.nickx{
+    display: block;
+    background: url(/images/c.png)  no-repeat -233px -235px;
+    font-size: 16px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    cursor: pointer;
+}
+.login-box .login-links {
+    margin-top: 24px;
+    overflow: hidden;
+}
+.register {
+    float: right;
+}
+.login-box .submit {
+    margin-top: 13px;
+}
+.login-box .submit button {
+    width: 250px;
+    height: 37px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    background: #f40;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.login-box .other-login {
+    margin-top: 20px;
+}
+li {
+    list-style: none;
+    display: list-item;
+}
+.login-box .other-login a {
+    display: inline-block;
+    margin-left: 8px;
+}
+.weibo-login {
+    background: url(../images/c.png) no-repeat 0 -213px;
+    padding-left: 20px;
+}
+.alipay-login {
+    padding-left: 20px;
+    background: url(../images/icon-alipay.png) no-repeat ;
+}
+.qrcode-mod {
+    padding-top: 20px;
+}
+.qrcode-desc {
+    text-align: center;
+}
+.qrcode-main {
+    padding: 15px 0;
+}
+.qrcode-img {
+    width: 115px;
+    margin: 0 auto;
+    padding: 7px;
+    box-shadow: 0 0 8px #DDD;
+}
+.login-bg {
+    position: absolute;
+    width: 350px;
+    height: 280px;
+    left: 170px;
+    top: 0;
+}
+.login-extra{
+    margin-top:10px;
+}
+.footer {
+    position: relative;
+    margin: 20px auto 0;
+    padding: 7px 0 9px;
+    border-top: 1px solid #ddd;
+}
+.footer .footer-hd p {
+    margin-bottom: 8px;
+    margin-top:0px;
+    line-height: 27px;
+    border-bottom: 1px solid #ddd;
+}
+.footer .footer-bd p, .footer .footer-hd p {
+    padding-bottom: 8px;
+    overflow: hidden;
+}
+b{
+    color: #ddd;
+}
+.footer-ft img{
+    width: 36px;
+    height: 36px;
+}
+.footer .footer-bd em, .footer .footer-bd span{
+    color: #9C9C9C;
+}
+.login-box .login-text {
+    width: 203px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 45px;
+    vertical-align: middle;
+    border: 1px solid #dedede;
+}
+

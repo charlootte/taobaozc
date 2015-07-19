@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>注册</title>
+    <link type="text/css" href="/stylesheets/register.css" rel="stylesheet">
+</head>
+<body class="chl-reg">
+<div class="page">
+    <div class="ks-dialog" id="J_AgreementDialog">
+        <div class="ks-dialog-content">
+            <a href="http://www.taobao.com" role="button">
+                <span class=""> </span>
+            </a>
+            <div class="ks-dialog-header">
+                <h3>注册协议</h3>
+            </div>
+            <div class="ks-dialog-body">
+                <p><strong>【审慎阅读】</strong>您在申请注册流程中点击同意前，应当认真阅读以下协议。<strong style="text-decoration: underline">请您务必审慎阅读、充分理解协议中相关条款内容，其中包括：</strong>
+                </p>
+                <p>1、<strong style="text-decoration: underline">与您约定免除或限制责任的条款；</strong>
+                </p>
+                <p>2、<strong style="text-decoration: underline">与您约定法律适用和管辖的条款；</strong>
+                </p>
+                <p>3、<strong style="text-decoration: underline">其他以粗体下划线标识的重要条款。</strong>
+                </p>
+                <p>如您对协议有任何疑问，可向平台客服咨询。
+                </p>
+                <p><strong>【特别提示】</strong>当您按照注册页面提示填写信息、阅读并同意协议且完成全部注册程序后，即表示您已充分阅读、理解并接受协议的全部内容。如您因平台服务与淘宝发生争议的，适用《淘宝平台服务协议》处理。如您在使用平台服务过程中与其他用户发生争议的，依您与其他用户达成的协议处理。
+                </p>
+                <p>
+                    <strong style="text-decoration: underline">阅读协议的过程中，如果您不同意相关协议或其中任何条款约定，您应立即停止注册程序。</strong>
+                </p>
+                <p><a href="http://www.taobao.com/go/chn/member/agreement.php" target="_blank">《淘宝服务协议》</a></p>
+                <p><a href="http://www.taobao.com/go/chn/tb-fp/2014/law.php" target="_blank">《法律声明及隐私权政策》</a>
+                </p>
+                <p><a href="http://ab.alipay.com/agreement/contract.htm" target="_blank">	《支付宝服务协议》</a>
+                </p>
+                <p  class="btnb">
+                    <button class="btn btn-large" type="button" id="J_AgreementBtn">同意协议
+                    </button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="header" class="clearfix" >
+        <div class="logo">
+            <h1>
+                <a href="http://www.taobao.com/" target="_top">
+                    <img id="J_TBLogo" src="images/loglo.png" alt="淘宝网 Taobao.com - 阿里巴巴旗下网站"/>
+                </a>
+            </h1>
+            <h2  id="r_p_registration">账户注册</h2>
+        </div>
+        <div class="steps steps-4 clearfix">
+            <ol>
+                <li class="active">
+                    <i id="r_p_createAccount">1</i>
+                    <span>设置登录名</span>
+                </li>
+                <li>
+                    <i id="r_p_fillUserInfo">2</i>
+                    <span>填写账户信息</span>
+                </li>
+                <li>
+                    <i id="r_p_regSuc">3</i>
+                    <span>注册成功</span>
+                </li>
+            </ol>
+
+
+        </div>
+        <div class="content">
+            <div class="form-list form-main-list">
+                <div id="J_EmailFrom">
+                    <form>
+                        <div  class="form-group">
+                            <div class="form-item">
+                                <span class="form-label">电子邮箱</span>
+                                <input class="form-text" autocomplete="true" id="J_email" name="email" type="text" placeholder="请输入你的电子邮箱">
+                            </div>
+                            <div class="msg msg-type-none" id="M_putemail"style="display:none;">
+                                <i class="iconfont"> </i>
+                                <div class="msg-cnt">请输入你的电子邮箱</div>
+                            </div>
+                            <div class="msg msg-type-error" id="M_errormail" style="display:none;">
+                                <i class="iconfont"> </i>
+                                <div class="msg-cnt">请输入你的电子邮箱</div>
+                            </div>
+                            <div class="msg  msg-type-error" id="M_errormailfrom" style="display:none;">
+                                <i class="iconfont"></i>
+                                <div class="msg-cnt">邮箱格式不正确，请重新输入</div>
+                            </div>
+                            <div class="msg msg-type-ok" id="M_okemail" style="display:none;">
+                                <i class="iconfont"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="form-item form-item-short" id="J_BtnEmailForm">
+                                <input type="button" class="btn btn-large tsl btn-disabled" id="J_next" value="下一步">
+                            </div>
+                            <div class="form-item msg-type-error" id="J_error_Email" style="display:none;">
+                                <i class="iconfont"> </i>
+                                <div class="msg-cnt">此邮箱作为登录名已存在，请更换邮箱或登录</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="J_InfoForm" style="display:none;">
+                    <form>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <div class="form-item">
+                                    <span class="form-label form-label-b tsl">登录名</span>
+                                    <span id="userEmail"></span>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <span class="form-label form-label-b">设置登录密码</span>
+                                <span>此密码可用于登录支付宝</span>
+                            </div>
+                            <div class="form-item">
+                                <span class="form-label">登录密码</span>
+                                <input class="form-text" id="J_password" name="password" type="password" placeholder="设置你的登录密码">
+                            </div>
+                            <div class="form-item">
+                                <span class="form-label">再次确认</span>
+                                <input class="form-text" id="J_RePassword" name="confirmPwd" type="password" placeholder="再次输入你的登录密码" >
+                                <div class="try msg-type-error" id="M_erroed" style="display:none;">
+                                    <i class="iconfont"></i>
+                                    <div class="msg-cnt">密码错误，请重新输入</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-item">
+                                <span class="form-label form-label-b">设置会员名</span>
+                            </div>
+                            <div class="form-item">
+                                <span class="form-label">会员名</span>
+                                <input class="form-text" id="J_vipname" name="userName" autocomplete="off" type="text" placeholder="会员名一旦设置成功，无法修改">
+                            </div>
+                            <div>
+
+                            </div>
+                            <div class="nick-size" id="J_NickSize" style="visibility: hidden;">
+                                <span>个字符</span>
+                            </div>
+                            <div class="form-item" id="J_BtnInfoForm" >
+                                <input  type="button" id="J_ensure" class="btn btn-large"value="确　定">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="J_Succ" style="display:none;">
+                    <form>
+                        <div class="form-item">
+	    	    			<span class="suc">
+	    	    				<i class="iconfont"></i>
+	    					</span>
+                            <span class="form-label">恭喜你，注册成功！</span>
+                            <a href="so">去首页看看</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div  class="footer">
+        <div class="footer-hd">
+            <p>
+                <a href="http://page.1688.com/shtml/about/ali_group1.shtml">阿里巴巴集团</a>
+                <b>|</b>
+                <a href="http://www.alibaba.com">阿里巴巴国际站</a>
+                <b>|</b>
+                <a href="http://www.1688.com">阿里巴巴中国站</a>
+                <b>|</b>
+                <a href="http://www.aliexpress.com">全球速卖通</a>
+                <b>|</b>
+                <a href="http://www.taobao.com">淘宝网</a>
+                <b>|</b>
+                <a href="http://www.tmall.com">天猫</a>
+                <b>|</b>
+                <a href="http://ju.taobao.com">聚划算</a>
+                <b>|</b>
+                <a href="http://www.etao.com">一淘</a>
+                <b>|</b>
+                <a href="http://www.alimama.com">阿里妈妈</a>
+                <b>|</b>
+                <a href="http://trip.taobao.com">淘宝旅行</a>
+                <b>|</b>
+                <a href="http://www.xiami.com">虾米</a>
+                <b>|</b>
+                <a href="http://www.aliyun.com">阿里云计算</a>
+                <b>|</b>
+                <a href="http://www.yunos.com">云OS</a>
+                <b>|</b>
+                <a href="http://www.net.cn">万网</a>
+                <b>|</b>
+                <a href="http://www.alipay.com">支付宝</a>
+                <b>|</b>
+                <a href="http://www.laiwang.com/">来往</a>
+            </p>
+        </div>
+        <div class="footer-bd">
+            <p>
+                <a href="http://www.taobao.com/about">关于淘宝</a>
+                <a href="http://www.taobao.com/about/partners.php">合作伙伴</a>
+                <a href="http://pro.taobao.com">营销中心</a>
+                <a href="mailto:lianzheng@taobao.com" title="lianzheng@taobao.com" target="_self">廉正举报</a>
+                <a href="http://service.taobao.com/support/main/service_route.htm">联系客服</a>
+                <a href="http://open.taobao.com">开放平台</a>
+                <a href="http://www.taobao.com/about/join.php">诚征英才</a>
+                <a href="http://www.taobao.com/about/contact.php">联系我们</a>
+                <a href="http://www.taobao.com/sitemap.php">网站地图</a>
+                <a href="http://www.taobao.com/about/copyright.php">法律声明</a>
+                <em>© 2015 Taobao.com 版权所有</em>
+            </p>
+            <p>
+                <span>网络文化经营许可证：<a href="images/T1ysdvXtNeXXcPpEkQ-972-636.jpg">文网文[2010]040号</a></span>
+                <b>|</b>
+                <span>增值电信业务经营许可证：浙B2-20080224-1</span>
+                <b>|</b>
+                <span>信息网络传播视听节目许可证：1109364号</span>
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="/javascripts/register.js"></script>
+<script src="/javascripts/jquery-2.1.3.js"></script>
+<script>
+    var e1,email,username,password;
+
+    //点击下一步 登录名显示所填邮箱
+    $("#J_next").click(function(){
+
+        e1 = $("#J_email").val();  //取到所填邮箱
+        $("#userEmail").html(e1);
+    });
+
+    //点击确定 发送请求
+    $("#J_ensure").click(function(){
+        email = e1;
+        password =  $("#J_password").val(); //取密码
+        username =  $("#J_vipname").val();  //取会员名
+        $.ajax({
+            type: "post",
+            url: "/userSave",
+            data:{
+                email:email,
+                username:username,
+                password:password
+            },
+            success: function(data) {
+                alert("成功");
+            },
+            error: function(data) {
+                alert("失败");
+            }
+        })
+    });
+
+     //ajax提交数据
+    function submitData(){
+
+//        var newuser = {
+//            email:emai,
+//            username:usernam,
+//            password:passwor
+//        };
+//        var xhr = new XMLHttpRequest();
+//        xhr.onreadystatechange = function () {
+//            if (xhr.readyState == 4) {
+//                if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) {
+//                    alert("success register");
+//                } else {
+//                    alert("request was unsuccessful" + xhr.status);
+//                }
+//            }
+//        };
+//        xhr.open("post", "/userSave",true);
+//        xhr.setRequestHeader('CONTENT-TYPE','application/x-www-form-urlencoded');
+//        xhr.send(newuser);
+    }
+
+</script>
+
+</body>
+</html>
